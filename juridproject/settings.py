@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-l1l_!!beqni0cvp12-a8m2$1$!i$e1r%t!)b)l@g5o8czgmt&6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,12 +125,12 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#Amazon Configs
+#Amazon Configs - S3 Bucket
 
-AWS_ACCESS_KEY_ID = 'AKIA6JQ45BTJFMG4PDHY'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = 'abcdef'
+AWS_SECRET_ACCESS_KEY = 'abcdef'
 
-AWS_STORAGE_BUCKET_NAME = 'jurid-django-pedroafk'
+AWS_STORAGE_BUCKET_NAME = 'jurid-django-abcdef'
 
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 

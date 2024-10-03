@@ -1,13 +1,13 @@
-<h1>Student Details</h1>
+<h1>Detalhes do Estudante</h1>
 
-<p><strong>Name:</strong> {{ student.name }}</p>
+<p><strong>Nome:</strong> {{ student.name }}</p>
 <p><strong>Email:</strong> {{ student.email }}</p>
-<p><strong>Age:</strong> {{ student.age }}</p>
-<p><strong>Registration:</strong> {{ student.registration }}</p>
+<p><strong>Idade:</strong> {{ student.age }}</p>
+<p><strong>Registro Acadêmico:</strong> {{ student.registration }}</p>
 
 {% if student.profile_picture %}
-    <p><strong>Profile Picture:</strong></p>
+    <p><strong>Foto de Perfil:</strong></p>
     <img src="{{ student.profile_picture.url }}" alt="{{ student.name }}" width="200">
 {% else %}
-    <p>No profile picture available.</p>
+    <p>Nenhuma Foto de Perfil Disponível.</p>
 {% endif %}
